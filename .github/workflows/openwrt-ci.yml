@@ -69,6 +69,8 @@ jobs:
           # CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           cat >> .config <<EOF
           CONFIG_GRUB_IMAGES=y
+          CONFIG_TARGET_KERNEL_PARTSIZE=512
+          CONFIG_TARGET_ROOTFS_PARTSIZE=1024
           EOF
           #
           # ===============================================================
