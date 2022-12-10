@@ -69,7 +69,7 @@ jobs:
           # CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           # CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           cat >> .config <<EOF
-
+          
           CONFIG_TARGET_x86=y
           CONFIG_TARGET_x86_64=y
           CONFIG_TARGET_x86_64_DEVICE_generic=y
@@ -83,8 +83,6 @@ jobs:
           # CONFIG_PACKAGE_dns2socks is not set
           # CONFIG_PACKAGE_dns2tcp is not set
           CONFIG_PACKAGE_fuse-utils=y
-          # CONFIG_PACKAGE_iperf3 is not set
-          CONFIG_PACKAGE_iperf3-ssl=y
           CONFIG_PACKAGE_iptvhelper=y
           CONFIG_PACKAGE_kmod-fuse=y
           CONFIG_PACKAGE_libcap-bin=y
@@ -194,7 +192,6 @@ jobs:
           CONFIG_PACKAGE_kmod-iptunnel6=y
           CONFIG_PACKAGE_kmod-lib-zlib-deflate=y
           # CONFIG_PACKAGE_kmod-xfrm-interface is not set
-          CONFIG_PACKAGE_libiperf3=y
           CONFIG_PACKAGE_strongswan=y
           CONFIG_PACKAGE_strongswan-charon=y
           # CONFIG_PACKAGE_strongswan-charon-cmd is not set
@@ -294,6 +291,7 @@ jobs:
           CONFIG_STRONGSWAN_ROUTING_TABLE="220"
           CONFIG_STRONGSWAN_ROUTING_TABLE_PRIO="220"
           CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
+
 
           EOF
           #
